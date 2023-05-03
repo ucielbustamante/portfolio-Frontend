@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
@@ -29,4 +28,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # portfolio-Frontend
 #YoProgramo frontEnd portfolio
->>>>>>> 58e1019bf1260a046a4c07690b92b02769efe183
