@@ -1,0 +1,31 @@
+<div class="login">
+    <div class="background-login">
+        <h1>Log in</h1>
+        <form [formGroup]="form" (ngSubmit)="onLogin()">
+            <label for="username" class="formLabel"></label><br>
+            <input type="text" formControlName="username" class="formControl" id="username" name="username"
+                placeholder="Enter your Username" [(ngModel)]="username"><br>
+            <div *ngIf="Username?.errors && Username?.touched">
+                <p *ngIf="Username?.hasError('required')" class="errorMessage">
+                    The username is required
+                </p>
+            </div>
+            <label for="password" class="formLabel"></label><br>
+            <input type="password" formControlName="password"
+                [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+                id="password" name="password" placeholder="Enter your password" [(ngModel)]="password"><br>
+            <div *ngIf="Password?.errors && Password?.touched">
+                <p *ngIf="Password?.hasError('required')" class="errorMessage">
+                    Password is required
+                </p>
+                <p *ngIf="Password?.errors?.['minlength']" class="errorMessage">
+                    Password must be 4 or more characters
+                </p>
+            </div>
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">Log in</button>
+            <p class="signUp">
+                Don't have an account yet? <a href="http://localhost:4200/sign-up">Sign Up</a>
+            </p>
+        </form>
+    </div>
+</div>

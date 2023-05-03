@@ -1,0 +1,62 @@
+#skills {
+    margin: 0 4vw 0 4vw;
+    box-sizing: border-box;
+    margin-top: -80px;
+    padding-top: 80px;
+    margin-bottom: 20vh;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #45A29E;
+}
+
+/*Estilos de las letras y las barras de las skills*/
+#skills h1 {
+    text-align: center;
+    font-family: 'Didact Gothic';
+    font-size: calc(1.4em + 1.4vw);
+    color: #66FCF1;
+}
+
+#skills p {
+    margin-top: 2vh;
+    font-family: 'Didact Gothic';
+    font-size: calc(0.9em + 0.9vw);
+    color: #45A29E;
+}
+
+i{
+    padding-left: 6px;
+    color: #C5C6C7;
+}
+
+.skills {
+    text-align: right;
+    border-radius: 15px;
+    padding: 10px 10px 10px;
+    color: #1F2833;
+    font-family: 'Didact Gothic';
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@media screen and (max-width:870px){
+    #skills{
+        margin-top: 5vh;
+        margin-right: 12vw;
+    }
+}

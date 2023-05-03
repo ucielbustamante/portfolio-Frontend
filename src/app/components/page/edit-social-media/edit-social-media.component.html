@@ -1,0 +1,21 @@
+<div class="editSocialMedia">
+    <h1>Edit a Social Media</h1>
+
+    <form [formGroup]="form" (ngSubmit)="editSocialMedia()">
+
+        <label for="name" class="formLabel"></label><br>
+        <input type="name" formControlName="name" id="name" name="name" placeholder="Enter a name for the social media"
+            [(ngModel)]="name"><br>
+
+        <label for="img" class="formLabel"></label><br>
+        <input type="img" formControlName="img" class="formControl" id="img" img="img"
+            placeholder="Enter your social media img" [(ngModel)]="img"><br>
+
+
+        <label for="link" class="formLabel"></label><br>
+        <input type="link" formControlName="link" id="link" name="link"
+            placeholder="Enter the link of the social media" [(ngModel)]="link"><br>
+
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">Update</button>
+    </form>
+</div>

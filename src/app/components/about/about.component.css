@@ -1,0 +1,102 @@
+/*Estilos del home o about me*/
+#about {
+    height: 100vh;
+    display: flex;
+    margin: 0 4vw 20vh 4vw;
+}
+
+.pc-mode{
+    margin-top: 10%;
+}
+
+/*Estilos de la descripcion de home*/
+.text-justify {
+    width: 60%;
+    align-self: center;
+    text-align: justify;
+}
+
+.text-justify h1{
+    text-align: end;
+}
+
+.text-justify a, i{
+    color: #C5C6C7;
+}
+
+.text-justify h4 {
+    font-size: calc(2.3vw + 2.3vh);
+    margin-right: 1.5vw;
+    font-family: 'Allerta Stencil';
+    color: #66FCF1;
+}
+
+.text-justify h2 {
+    font-size: calc(2.6vw + 2.6vh);
+    margin-right: 1.5vw;
+    font-family: 'Allerta Stencil';
+    color: #C5C6C7;
+}
+
+.text-justify h3 {
+    font-size: calc(1.9vw + 1.9vh);
+    margin-right: 1.5vw;
+    font-family: 'Allerta Stencil';
+    color: #45A29E;
+}
+
+.text-justify h3 strong {
+    color: #66FCF1;
+}
+
+/*Estilos de la imagen de home*/
+.profile-photo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo img {
+    height: 25vw;
+    width: 25vw;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    box-shadow:  12px 12px 12px #66FCF1;
+}
+
+.profile-photo img:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+@media screen and (max-width:1024px){
+    #about
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-justify{
+        margin-top: 10vh;
+    }
+    .profile-photo{
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    .profile-photo img{
+        margin-top: 20px;
+        align-self: center;
+    }
+    .pc-mode{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1080px){
+    .phone-mode{
+        display: none;
+    }
+}

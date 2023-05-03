@@ -1,0 +1,104 @@
+.navigationbar {
+    z-index: 9;
+
+    background-color: #C5C6C7;
+    position: fixed;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+.navigationbar button {
+    float: right;
+    color: #0B0C10;
+    background-color: #45A29E;
+    border: none;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.navigationbar a {
+    float: left;
+    display: block;
+    color: #0B0C10;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigationbar a:hover {
+    background-color: #45A29E;
+    color: #C5C6C7;
+}
+
+.navigationbar a.active {
+    background-color: #45A29E;
+    color: #0B0C10;
+}
+
+.navigationbar .icon {
+    display: none;
+}
+
+/* Estilo del botón de menú */
+#myNavbar .dropdown {
+    display: inline-block;
+}
+
+/* Estilo del menú desplegable */
+#myNavbar .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#myNavbar .dropdown-content a {
+    background-color: #45A29E;
+    color: #C5C6C7;
+}
+
+/* Mostrar el menú desplegable cuando el cursor pasa por encima del botón */
+#myNavbar:focus .dropdown-content {
+    display: block;
+}
+
+/* Estilo de los enlaces dentro del menú desplegable */
+#myNavbar .dropdown-content a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 760px) {
+    /* Ocultar todos los enlaces excepto el primer enlace "Inicio" */
+    #myNavbar a:not(:first-child) {
+        display: none;
+    }
+
+    /* Mostrar el menú desplegable cuando se hace clic en el botón */
+    #myNavbar .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+
+    /* Estilo del botón de menú cuando se muestra el menú desplegable */
+    #myNavbar .dropdown:focus-within {
+        background-color: #45A29E;
+    }
+
+    /* Estilo de los enlaces dentro del menú desplegable */
+    #myNavbar .dropdown-content a {
+        background-color: #45A29E;
+        color: #0B0C10;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 760px) {
+    /* Ocultar el botón de menú en pantallas grandes */
+    #myNavbar .dropdown {
+        display: none;
+    }
+}

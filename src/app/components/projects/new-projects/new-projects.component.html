@@ -1,0 +1,24 @@
+<body>
+    <div class="createProject">
+        <h1>Add Project</h1>
+
+        <form [formGroup]="form" (ngSubmit)="createProject()">
+
+
+            <label for="name" class="formLabel"></label><br>
+            <input type="name" formControlName="name" id="name" name="name" placeholder="Enter a name for the project"
+                [(ngModel)]="name"><br>
+
+            <label for="img" class="formLabel"></label><br>
+            <input type="text" formControlName="img" class="formControl" id="img" img="img"
+                placeholder="Enter your project image" [(ngModel)]="img"><br>
+
+            <label for="description" class="formLabel"></label><br>
+            <input type="description" formControlName="description" id="description" name="description"
+                placeholder="Enter the description of the project" [(ngModel)]="description"><br>
+
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">Create</button>
+
+        </form>
+    </div>
+</body>

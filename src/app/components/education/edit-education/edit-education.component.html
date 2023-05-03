@@ -1,0 +1,22 @@
+<body>
+    <div class="editEducation">
+        <h1>Add Education</h1>
+
+        <form [formGroup]="form" (ngSubmit)="editEducation()">
+            <label for="name" class="formLabel"></label><br>
+            <input type="text" formControlName="name" class="formControl" id="name" name="name"
+                placeholder="Enter your education name" [(ngModel)]="name"><br>
+
+            <label for="status" class="formLabel"></label><br>
+            <input type="status" formControlName="status" id="status" name="status"
+                placeholder="Enter the status of the education" [(ngModel)]="status"><br>
+
+            <label for="img" class="formLabel"></label><br>
+            <input type="img" formControlName="img" id="img" name="img" placeholder="Enter an image for the education"
+                [(ngModel)]="img"><br>
+
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">Edit</button>
+
+        </form>
+    </div>
+</body>

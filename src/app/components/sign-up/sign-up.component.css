@@ -1,0 +1,81 @@
+.sign-up{
+    min-height: 100vh;
+    max-height: 100vh;
+    
+}
+
+h1 {
+    padding-top: 15vh;
+    text-align: center;
+    font-family: 'Didact Gothic';
+    font-size: calc(1.4em + 1.4vw);
+    color: #66FCF1;
+  }
+
+/*Estilos del form general*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilos de los campos a rellenar*/
+form input{
+    background-color: #0B0C10;
+    color: #66FCF1;
+    border-color: #45A29E;
+    border-radius: 5px;
+    width: 40%;
+    letter-spacing: 1px;
+    font-family: 'Didact Gothic';
+    align-self: center;
+    padding: 10px 0px 10px 10px;
+}
+
+/*Placehorder styles*/
+::placeholder{
+    color: #45A29E;
+}
+
+/*Estilos cuando se clickea*/
+input:focus{
+    box-shadow: #45A29E 0px 0px 0px 4px;
+}
+
+/*Boton de Send*/
+button{
+    align-self: center;
+    max-width: 40%;
+    border-radius: 5px;
+}
+
+/*Propiedades del boton*/
+.send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 80%;
+    font-family: 'Didact Gothic';
+    background-color: #45A29E;
+    border: none;
+    color: #1F2833;
+}
+
+/*Estilos al mantener cursor sobre el boton*/
+.send-button:hover{
+    background-color: #66FCF1;
+    color: #1F2833;
+}
+
+.errorMessage{
+    text-align: center;
+    color: red;
+}
+
+.signUp{
+    text-align: center;
+    color: #45A29E;
+    margin-top: 30px;
+}
+
+.signUp a{
+    color: #66FCF1;
+}

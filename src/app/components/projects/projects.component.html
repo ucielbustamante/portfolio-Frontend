@@ -1,0 +1,22 @@
+<div id="projects">
+    <h1>Projects <a href="http://localhost:4200/newProject/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a></h1>
+
+    <div id="myProjects">
+        <ul *ngFor="let project of projectsList">
+            <li>
+                <div id="project">
+                    <div id="img">
+                        <img [src]="project.img">
+                    </div>
+                    <div id="text">
+                        <p><a (click)="edit(project.id)"><i class="fas fa-edit" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+                            <a href="/portfolio" (click)="delete(project.id)"><i class="fa-sharp fa-solid fa-trash" *ngIf="userRole === 'ROLE_ADMIN'"></i></a> Featured Project</p>
+                        <h2>{{ project.name }}</h2>
+                        <h3>{{ project.description }}</h3>
+                        
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

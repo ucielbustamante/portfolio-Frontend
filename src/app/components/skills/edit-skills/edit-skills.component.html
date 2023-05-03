@@ -1,0 +1,17 @@
+<div class="editSkill">
+    <h1>Edit an Skill</h1>
+
+    <form [formGroup]="form" (ngSubmit)="editSkill()">
+        <label for="name" class="formLabel"></label><br>
+        <input type="text" formControlName="name" class="formControl" id="name" name="name"
+            placeholder="Enter your skill name" [(ngModel)]="name"><br>
+        
+            <br><div>Enter a value for the skill:</div>
+        <label for="value" class="formLabel"></label>
+        <input type="range" formControlName="value" id="value" name="value" placeholder="Enter a value for the skill"
+            (input)="updateValue($event)" [(ngModel)]="value"> {{sliderValue}}<br>
+
+
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">Update</button>
+    </form>
+</div>

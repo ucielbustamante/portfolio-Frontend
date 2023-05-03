@@ -1,0 +1,20 @@
+<header>
+    <div id="myNavbar" class="navigationbar">
+      <a href="portfolio/#about" class="active">About</a>
+      <a href="portfolio/#education">Education</a>
+      <a href="portfolio/#skills">Skills</a>
+      <a href="portfolio/#projects">Projects</a>
+      <a href="portfolio/#contact">Contact</a>
+      <div class="dropdown" [ngClass]="{'open': isMenuOpen}">
+        <button class="dropbtn" (click)="onToggleMenu();">&#9776;</button>
+        <div class="dropdown-content">
+          <a href="portfolio/#education">Education</a>
+          <a href="portfolio/#skills">Skills</a>
+          <a href="portfolio/#projects">Projects</a>
+          <a href="portfolio/#contact">Contact</a>
+        </div>
+      </div>
+      <button type="button" (click)="login()" *ngIf="!isLogged">Login</button>
+      <button type="button" (click)="onLogout()" *ngIf="isLogged">Logout</button>
+    </div>
+  </header>

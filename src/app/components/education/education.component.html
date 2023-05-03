@@ -1,0 +1,21 @@
+<div id="education">
+    <h1>Education <a href="http://localhost:4200/newEducation/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a></h1>
+    <div class="education">
+        <ul *ngFor="let education of educationList">
+            <li>
+                <div class="items">
+                    <div class="text">
+                        <h2>{{education.name}} 
+                            <a (click)="edit(education.id)"><i class="fas fa-edit" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+                            <a href="/portfolio" (click)="delete(education.id)"><i class="fa-sharp fa-solid fa-trash" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+                        </h2>
+                        <p>{{education.status}}</p>
+                    </div>
+                    <div class="photo">
+                        <img class="img-responsive" [src]="education.img">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

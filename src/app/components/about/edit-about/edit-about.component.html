@@ -1,0 +1,39 @@
+<body>
+    <div class="editAbout">
+        <h1>Edit your personal information</h1>
+
+        <form [formGroup]="form" (ngSubmit)="editAbout()">
+            <label for="name" class="formLabel"></label><br>
+            <input type="text" formControlName="name" class="formControl" id="name" name="name"
+                placeholder="Enter your name" [(ngModel)]="name"><br>
+
+            <label for="age" class="formLabel"></label><br>
+            <input type="age" formControlName="age" id="age" name="age" placeholder="Enter your age"
+                [(ngModel)]="age"><br>
+
+            <label for="img" class="formLabel"></label><br>
+            <input type="img" formControlName="img" id="img" name="img" placeholder="Enter a picture of yourself"
+                [(ngModel)]="img"><br>
+
+            <label for="mail" class="formLabel"></label><br>
+            <input type="mail" formControlName="mail" id="mail" name="mail" placeholder="Enter your email"
+                [(ngModel)]="mail"><br>
+
+            <label for="phone" class="formLabel"></label><br>
+            <input type="phone" formControlName="phone" id="phone" name="phone" placeholder="Enter your number phone"
+                [(ngModel)]="phone"><br>
+
+            <label for="location" class="formLabel"></label><br>
+            <input type="location" formControlName="location" id="location" name="location"
+                placeholder="Enter your location" [(ngModel)]="location"><br>
+
+
+            <label for="description" class="formLabel"></label><br>
+            <input type="description" formControlName="description" id="description" name="description"
+                placeholder="Enter your description (MAX 255 Characters)" [(ngModel)]="description"><br>
+
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">Edit</button>
+
+        </form>
+    </div>
+</body>

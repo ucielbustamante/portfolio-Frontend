@@ -1,0 +1,80 @@
+/*Estilos del main-container*/
+.main-container{
+    width: 100%;
+    display: flex;
+}
+
+/*Estilos de los iconos*/
+#social-logos {
+    position: sticky;
+    top: 25%;
+    height: 50%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 870px) {
+    #social-logos {
+        display: none;
+    }
+}
+
+#social-logos a img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-top: 20px;
+    filter: invert(59%) sepia(8%) saturate(2604%) hue-rotate(128deg) brightness(95%) contrast(83%);
+    
+}
+
+#social-logos a img:hover {
+    filter: invert(86%) sepia(44%) saturate(526%) hue-rotate(102deg) brightness(106%) contrast(98%);
+}
+
+#page{
+    width: auto;
+}
+
+i{
+    color:#C5C6C7;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.fa-plus{
+    padding-left: 58px;
+}
+
+/*Estilos del link para mandar mail*/
+#mail {
+    position: sticky;
+    top: 25%;
+    height: 50%;
+}
+
+#mail p {
+    color: #45A29E;
+    writing-mode: tb-rl;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 30px;
+    margin-right: 5%;
+    font-family: 'Didact Gothic';
+    font-size: 33px;
+}
+
+#mail a{
+    text-decoration: none;
+}
+
+#mail a p:hover{
+    color: #66FCF1;
+}
+
+@media screen and (max-width: 870px) {
+    #mail p {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+<!--Div con todo el contenido-->
+<div class="main-container">
+    <!--Div con los logos de las social-media (5% widht)-->
+    <div id="social-logos">
+        <a href="http://localhost:4200/newSocialMedia/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+        <ul *ngFor="let social of socialList">
+            <li>
+                <a target="_blank" href="{{social.link}}"><img [src]="social.img" alt="{{social.name}}" title="{{social.name}}"></a>
+                <a (click)="edit(social.id)"><i *ngIf="userRole === 'ROLE_ADMIN'" class="fas fa-edit"></i></a>
+                <a href="/portfolio" (click)="delete(social.id)"><i class="fa-sharp fa-solid fa-trash" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+            </li>
+        </ul> 
+    </div>
+    <div id="page">
+        <app-about></app-about>
+        <app-education></app-education>
+        <app-skills></app-skills>
+        <app-projects></app-projects>
+        <app-contact></app-contact>
+    </div>
+    <div id="mail"><a href="mailto:{{miPortfolio?.mail}}"><p>{{miPortfolio?.mail}}</p></a>
+    </div>
+</div>

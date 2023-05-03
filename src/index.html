@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#45A29E">
+  <title>Portfolio</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/img/u.ico">
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/75f10319e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <app-root></app-root>
+  <script>
+    /*Funcion de navbar, aparece cuando scrolleas 20px*/
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myNavbar").style.top = "0";
+      } else {
+        document.getElementById("myNavbar").style.top = "-50px";
+      }
+    }
+  </script>
+</body>
+
+</html>

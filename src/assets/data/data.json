@@ -1,0 +1,74 @@
+{
+	"name": "Uciel Bustamante",
+	"age": 19,
+	"img": "assets/img/yo.jpeg",
+	"mail": "ucibustamante.a@gmail.com",
+	"phone": "1132413538",
+	"location": "Buenos Aires, Argentina",
+	"desc": "i'm currently studying a Software Degree on the UNPAZ and im an active learner of the IT enviroment also, i'm doing a course to be a Fullstack JR Developer. I love to work as a team and develop wonderful things.",
+	"skills": [
+		{
+			"name": "HTML",
+			"value": "60%"
+		},
+		{
+			"name": "CSS",
+			"value": "60%"
+		},
+		{
+			"name": "JavaScript",
+			"value": "40%"
+		},
+		{
+			"name": "Python",
+			"value": "50%"
+		},
+		{
+			"name": "SQL",
+			"value": "40%"
+		},
+		{
+			"name": "English",
+			"value": "80%"
+		}
+	],
+	"projects": [
+		{
+			"name": "My Personal Portfolio",
+			"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"img": "assets/img/presentation.png"
+		},
+		{
+			"name": "Calculadora",
+			"desc": "I built ....",
+			"img": "assets/img/presentation.png"
+		}
+	],
+	"social": [
+		{
+			"name": "Linkedin",
+			"link": "https://www.linkedin.com/in/uciel-bustamante/",
+			"img": "assets/img/linkedin.png"
+		},
+		{
+			"name": "Github",
+			"link": "https://github.com/ucielbustamante",
+			"img": "assets/img/github.png"
+		},
+		{
+			"name": "Twitter",
+			"link": "https://twitter.com/uciellol",
+			"img": "assets/img/twitter.png"
+		},
+		{
+			"name": "Facebook",
+			"link": "https://www.facebook.com/uci.bustamante",
+			"img": "assets/img/facebook.png"
+		},
+		{
+			"name": "Instagram",
+			"link": "https://www.instagram.com/uciel_bustamante/",
+			"img": "assets/img/instagram.png"
+		}
+	]
+}

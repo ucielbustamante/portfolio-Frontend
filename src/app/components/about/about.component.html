@@ -1,0 +1,19 @@
+<!--Div con la seccion home-->
+<div id="about">
+    <div class="text-justify">
+        <h1 class="phone-mode" *ngIf="userRole === 'ROLE_ADMIN'">
+            <a href="/editAbout"><i class="fas fa-edit"></i></a>
+        </h1>
+        <h4>Hi, my name is</h4>
+        <h2>{{miPortfolio?.name}}.</h2>
+        <h3>
+            <strong>I'm {{miPortfolio?.age}}</strong>, {{miPortfolio?.description}}
+        </h3>
+    </div>
+    <div class="profile-photo">
+        <img class="img-responsive" [src]="miPortfolio?.img">
+    </div>
+    <h1 class="pc-mode" *ngIf="userRole === 'ROLE_ADMIN'">
+        <a href="/editAbout"><i class="fas fa-edit"></i></a>
+    </h1>
+</div>

@@ -1,0 +1,26 @@
+<div id="contact">
+    <h1 class="section-header">Contact</h1>
+    <form>
+        <label for="name"></label><br>
+        <input type="text" id="name" name="name" placeholder="NAME"><br>
+        <label for="email"></label><br>
+        <input type="text" id="email" email="email" placeholder="E-MAIL"><br>
+        <label for="message"></label><br>
+        <textarea rows="15" id="message" placeholder="WRITE YOUR MESSAGE HERE"></textarea>
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">Send</button>
+    </form>
+    <div class="info">
+        <span><i class="fa-sharp fa-solid fa-location-dot"><span class="text"> {{miPortfolio?.location}}</span> </i></span>
+        <span><i class="fa-solid fa-phone"></i><span class="text"><a href="tel: +54-9-{{miPortfolio?.phone}}" title="Give me a call"> {{miPortfolio?.phone}}</a></span></span>
+        <span><i class="fa-solid fa-envelope"></i><span class="text"><a href="mailto:ucibustamante.a@gmail.com" title="Send me an email"> {{miPortfolio?.mail}}</a></span></span>
+    </div>
+    <div class="social-media">
+        <a href="http://localhost:4200/newSocialMedia/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+        <ul *ngFor="let social of socialList">
+            <li><a target="_blank" href="{{social.link}}"><img [src]="social.img" alt="{{social.name}}" title="{{social.name}}"></a></li>
+            <a (click)="edit(social.id)"><i *ngIf="userRole === 'ROLE_ADMIN'" class="fas fa-edit"></i></a>
+            <a href="/portfolio" (click)="delete(social.id)"><i class="fa-sharp fa-solid fa-trash" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+        </ul> 
+    </div>
+    <div class="copyright"><p>&copy; ALL OF THE RIGHTS RESERVED</p></div>
+</div>

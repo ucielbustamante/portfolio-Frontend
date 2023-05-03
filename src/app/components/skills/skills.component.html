@@ -1,0 +1,15 @@
+<!--Div con la seccion skills-->
+<div id="skills">
+  <h1>My Skills <a href="http://localhost:4200/newSkill/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a></h1>
+  <ul *ngFor="let skill of skillList">
+    <li>
+      <p>{{ skill.name }} <a (click)="edit(skill.id)"><i class="fas fa-edit" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+        <a href="/portfolio" (click)="delete(skill.id)"><i class="fa-sharp fa-solid fa-trash" *ngIf="userRole === 'ROLE_ADMIN'"></i></a></p>
+      <div class="container">
+        <div class="skills {{ skill.name }}" [ngStyle]="{ width: skill.value }" style="background-color: #66fcf1">
+          <strong>{{ skill.value }}</strong>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
