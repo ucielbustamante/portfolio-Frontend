@@ -2,7 +2,7 @@
 <div class="main-container">
     <!--Div con los logos de las social-media (5% widht)-->
     <div id="social-logos">
-        <a href="http://localhost:4200/newSocialMedia/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+        <a href="https://portfolio-frontend-51d7c.web.app/newSocialMedia/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
         <ul *ngFor="let social of socialList">
             <li>
                 <a target="_blank" href="{{social.link}}"><img [src]="social.img" alt="{{social.name}}" title="{{social.name}}"></a>
