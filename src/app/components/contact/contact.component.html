@@ -15,7 +15,7 @@
         <span><i class="fa-solid fa-envelope"></i><span class="text"><a href="mailto:ucibustamante.a@gmail.com" title="Send me an email"> {{miPortfolio?.mail}}</a></span></span>
     </div>
     <div class="social-media">
-        <a href="https://portfolio-frontend-19dad.web.app/newSocialMedia/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
+        <a href="https://portfolio-frontend-5a014.web.app/newSocialMedia/"><i class="fa-solid fa-plus" *ngIf="userRole === 'ROLE_ADMIN'"></i></a>
         <ul *ngFor="let social of socialList">
             <li><a target="_blank" href="{{social.link}}"><img [src]="social.img" alt="{{social.name}}" title="{{social.name}}"></a></li>
             <a (click)="edit(social.id)"><i *ngIf="userRole === 'ROLE_ADMIN'" class="fas fa-edit"></i></a>
