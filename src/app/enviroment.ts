@@ -1,2 +1,2 @@
-export const enviroment = 'http://localhost:8080/' ;{
+export const enviroment = 'https://portfolio-backend-878a.onrender.com/' ;{
 }
